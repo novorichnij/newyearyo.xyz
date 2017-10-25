@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+
+html {
+	height: 100%;
+	display: block;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: #f5f8f9;
+	color: #565a5f;
+	font-family: "open sans", "arial", "sans-serif";
+	font-size: 14px;
+	float: left;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #03b39c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #07d8bd;
+	transition: .2s ease;
+	-o-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-webkit-transition: .2s ease;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*-------------------------------------------- Slyles for header */
+header {
+	position: relative;
+	box-shadow: 0 2px 2px rgba(0,0,0,.07);
+	-moz-box-shadow:  0 2px 2px rgba(0,0,0,.07);
+	-webkit-box-shadow:  0 2px 2px rgba(0,0,0,.07);
+}
+
+#header {
+	display: block;
+	background-color: #ffffff;
+}
+
+#header #header-main {
+	max-width: 1155px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+#header #header-main:before,
+#header #header-main:after {
+	content: "";
+    display: table;
+}
+
+#header #header-main:after {
+    clear: both;
+}
+
+#header #header-main {
+
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#header #header-main #avatar,
+#header #header-main #logo {
+	display: inline-block;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 12px
+}
+
+#header #header-main #avatar .site-title {
+	display: inline-block;
+	color: #03b39c;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#header #header-main #avatar .site-title:hover,
+#header #header-main #main-nav .main-nav-link:hover,
+#header #header-main #main-nav #logout:hover,
+#header #header-main #search .search-form .search-form-submit:hover,
+#header #header-main .go-to-top:hover {
+	color: #07d8bd!important;
+}
+
+#header #header-main #avatar .site-title:focus,
+#header #header-main #main-nav .main-nav-link:focus,
+#header #header-main #main-nav #logout:focus,
+#header #header-main #search .search-form .search-form-submit:focus {
+	color: #07d8bd!important;
+}
+
+#header #header-main #main-nav {
+	position: relative;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 12px;
+	z-index: 20;
+}
+
+#header #header-main #main-nav .main-nav-link {
+	display: block;
+	float: left;
+	padding: 0 15px;
+	color: #565a5f!important;
+	background-color: #ffffff;
+	font-weight: 300;
+}
+
+#header #header-main #main-nav #logout {
+	display: block;
+	float: left;
+	padding: 0 15px;
+	color: #565a5f!important;
+	background-color: #ffffff;
+	font-weight: 300;
+}
+
+#header #header-main .go-to-top {
+	display: none;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 12px;
+	cursor: pointer;
+}
+
+#header #header-main #search {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	padding: 12px;
+}
+
+#header #header-main #search .search-form {
+	display: block;
+	position: relative;
+}
+
+#header #header-main #search .search-form .search-form-input {
+	width: 200px;
+	height: 40px;
+	padding: 0 30px 0 10px;
+	border-radius: 20px;
+	color: #565a5f;
+	background-color: #f5f8f9;
+	box-sizing: border-box;
+	border: 2px solid #eceff2;
+}
+
+#header #header-main #search .search-form .search-form-input:focus {
+	border: 2px solid #03b39c;
+	transition: .2s ease;
+	-o-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-webkit-transition: .2s ease;
+}
+
+#header #header-main #search .search-form .search-form-submit {
+	top: 50%;
+	right: 15px;
+	border: none;
+	cursor: pointer;
+	margin-top: -7px;
+	background: none;
+	position: absolute;
+	font: 13px font-icon;
+	font-family: "FontAwesome";
+	color: #03b39c;
+}
+
+#header #header-main #search .search-form .search-form-submit:before {
+	content: "\f002";
+}
+
+#header #header-main #twitter {
+	display: block;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	padding: 12px;
+}
+
+#header #header-main #twitter .avatar {
+	width:40px;
+	height:40px;
+	border-radius:20px;
+}
+
+#header #header-main #logo .avatar {
+	width:40px;
+	height:40px;
+}
+
+
+/*-------------------------------------------- Styles of website */
+
+#wrapper {
+	max-width: 1155px;
+	height: auto;
+	margin: 20px auto 0 auto;
+	padding: 0 20px;
+	float: none;
+}
+
+#wrapper:before,
+#wrapper:after {
+	content: "";
+    display: table;
+}
+
+#wrapper:after {
+    clear: both;
+}
+
+#wrapper #left-col {
+	width: 70%;
+	float: left;
+	padding-right: 5%;
+	box-sizing: border-box;
+}
+
+#wrapper #right-col {
+	width: 30%;
+	height: 100%;
+	float: right;
+	box-sizing: border-box;
+}
+
+#wrapper #right-col .banner {
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#wrapper #left-col .top-news {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 15px;
+	float: left;
+}
+
+/* -- Slider ------------------------------------*/
+
+#wrapper #left-col .top-news .slider-block {
+	display: flex;
+	position: relative;
+}
+
+#wrapper #left-col .top-news .slider .slide {
+	display: none;
+	position: relative;
+}
+
+#wrapper #left-col .top-news .slider .slide .link-slide {
+	position: absolute;
+	z-index: 10;
+	bottom: 14%;
+	left: 15%;
+	right: 15%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+}
+
+#wrapper #left-col .top-news .prev-slide {
+	position: absolute;
+	z-index: 10;
+	left: 0%;
+	top: 47%;
+	margin: 0 5px;
+	font-size: 18px
+}
+#wrapper #left-col .top-news .next-slide {
+	position: absolute;
+	z-index: 10;
+	right: 0%;
+	top: 47%;
+	margin: 0 5px;
+	font-size: 18px
+}
+
+#wrapper #left-col .top-news .nav-slider {
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	bottom: 4%;
+	left: 15%;
+	right: 15%;
+}
+
+#wrapper #left-col .top-news .nav-slider .button-slide {
+	display: inline-block;
+	padding: 0 3px;
+	color: #07d8bd;
+	border: 1px solid #07d8bd;
+	font-size: 8px;
+	cursor: pointer;
+}
+
+/* ----------------------------------------------*/
+
+.apportion {
+	float: left;
+	width: 100%;
+	height: 3px;
+	margin: 12px 0;
+	background-color: #eceff2;
+}
+
+#wrapper #left-col .news-one,
+#wrapper #left-col .news-three {
+	width: 48%;
+	float: left;
+}
+
+#wrapper #left-col .news-two,
+#wrapper #left-col .news-four {
+	width: 48%;
+	float: right;
+}
+
+.go-to-top {
+	font-size: 20px;
+}
+
+/*-------------------------------------------- Slyles for authorization */
+
+#wrapper #left-col #authorization {
+	float: left;
+	width: 33%;
+	color: #565a5f;
+	margin: 15px 0 15px 0;
+}
+
+#wrapper #left-col #authorization #authorization-tab {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#wrapper #left-col #authorization #authorization-form-login,
+#wrapper #left-col #authorization #authorization-form-signup {
+	width: 100%;
+	float: left;
+}
+
+#wrapper #left-col #authorization #authorization-tab input {
+	margin: 5px 0;
+	width: 50%;
+	height: 40px;
+	padding: 0 10px 0 10px;
+	color: #565a5f;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 2px solid #eceff2;
+}
+
+#wrapper #left-col #authorization #authorization-tab .tab-noactiv {
+	color: #bbc2cc;
+	background-color: #f5f8f9;
+	border: none;
+	border-bottom: 2px solid #eceff2;
+}
+
+#wrapper #left-col #authorization #authorization-form-login input,
+#wrapper #left-col #authorization #authorization-form-signup input {
+	float: left;
+	margin: 5px 0;
+	width: 100%;
+	height: 40px;
+	padding: 0 10px 0 10px;
+	color: #565a5f;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 2px solid #eceff2;
+}
+
+#wrapper #left-col #authorization #authorization-form-login span,
+#wrapper #left-col #authorization #authorization-form-signup span {
+	display: none;
+	float: left;
+	font-size: 12px;
+	color: #ff1e25;
+	margin: 0 0 10px 12px;
+}
+
+#wrapper #left-col #authorization #authorization-form-login input:focus,
+#wrapper #left-col #authorization #authorization-form-signup input:focus,
+#wrapper #left-col #authorization #authorization-tab input:focus {
+	border: 2px solid #07d8bd;
+	transition: .2s ease;
+	-o-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-webkit-transition: .2s ease;
+}
+
+#wrapper #left-col #authorization #authorization-form-login #login-button:hover,
+#wrapper #left-col #authorization #authorization-form-signup #signup-button:hover,
+#wrapper #left-col #authorization #authorization-tab input:hover {
+	border: 2px solid #03b39c;
+	cursor: pointer;
+	transition: .2s ease;
+	-o-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-webkit-transition: .2s ease;
+}
+
+/*-------------------------------------------- Slyles for feedback */
+
+#wrapper #left-col .feedback-form {
+	width: 33%;
+	margin-bottom: 15px;
+	float: left;
+}
+
+#wrapper #left-col .feedback-form input {
+	float: left;
+	margin: 5px 0;
+	width: 100%;
+	height: 40px;
+	padding: 0 10px 0 10px;
+	color: #565a5f;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 2px solid #eceff2;
+}
+
+#wrapper #left-col .feedback-form span {
+	display: none;
+	float: left;
+	font-size: 12px;
+	color: #ff1e25;
+	margin: 0 0 10px 12px;
+
+}
+
+#wrapper #left-col .feedback-form #feedback-message {
+	float: left;
+	margin: 5px 0;
+	width: 100%;
+	height: 180px;
+	resize: none;
+	padding: 10px;
+	color: #565a5f;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 2px solid #eceff2;
+	font-size: 13px;
+	font-family: "open sans", "arial", "sans-serif";
+}
+
+#wrapper #left-col .feedback-form input:focus,
+#wrapper #left-col .feedback-form #feedback-message:focus {
+	border: 2px solid #07d8bd;
+	transition: .2s ease;
+	-o-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-webkit-transition: .2s ease;
+}
+
+#wrapper #left-col .feedback-form #feedback-button:hover {
+	border: 2px solid #03b39c;
+	cursor: pointer;
+	transition: .2s ease;
+	-o-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-webkit-transition: .2s ease;
+}
+
+
+/*-------------------------------------------- Slyles for footer */
+
+footer {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 12px 0;
+	color: #565a5f;
+	background-color: #ffffff;
+	text-align: center;
+	box-shadow: 0 -2px 2px rgba(0,0,0,.07);
+	-moz-box-shadow:  0 -2px 2px rgba(0,0,0,.07);
+	-webkit-box-shadow:  0 -2px 2px rgba(0,0,0,.07);
+}
+
+#footer .footer-one .fotter-info {
+	display: inline-block;
+	color: #03b39c;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+#footer .footer-one {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+
+
+
+

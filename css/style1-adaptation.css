@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*-------------------------------------------- Slyles for adaptation */
+
+.header-fix {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 7px 17px -7px rgba(117,117,117,1);
+	-moz-box-shadow: 0px 7px 17px -7px rgba(117,117,117,1);
+	-webkit-box-shadow: 0px 7px 17px -7px rgba(117,117,117,1);
+	transition: .2s ease;
+}
+
+
+

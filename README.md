@@ -1,0 +1,2 @@
+# newyearyo.xyz
+test

@@ -31,6 +31,10 @@ $ (document).ready (function () {
 
 		currentSlide.hide ().removeClass ("current-slide");
 		prevSlide.fadeIn (200).addClass ("current-slide");
+		$ (".button-slide").eq (currentSlideIndex).css ({"background-color": "rgba(0,0,0,0)", "color": "#fff"});
+		$ (".button-slide").eq (prevSlideIndex).css ({"background-color": "rgba(245,248,249,.76)", "color": "#000000"});
+
+
 	});
 
 	$ (".button-slide").click (function () {
